@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechZ - IT Consulting & Resource Solutions</title>
+  <meta name="description" content="TechZ provides expert IT consultants and resources. Partner with us for your next project.">
+  <style>
+    :root {
+      --primary: #154c79;
+      --secondary: #f4b400;
+      --text: #222;
+      --bg: #fff;
+      --accent: #e5eaf5;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+    nav {
+      background: var(--accent);
+      padding: 0.7rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    .container {
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--secondary);
+      display: inline-block;
+      padding-bottom: 0.2em;
+    }
+    .about-img {
+      float: right;
+      margin-left: 2rem;
+      width: 240px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(21,76,121,0.07);
+    }
+    ul.services {
+      list-style: disc inside;
+      margin: 1rem 0;
+      padding: 0;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .team-member {
+      background: var(--accent);
+      border-radius: 8px;
+      padding: 1rem;
+      flex: 1 1 230px;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(21,76,121,0.08);
+    }
+    .team-member img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.7rem;
+    }
+    .contact-box {
+      background: var(--accent);
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    .contact-box p {
+      margin: 0.3rem 0;
+      font-size: 1.05rem;
+    }
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+      font-size: 0.98rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) {
+      .about-img { float: none; display: block; margin: 1.5rem auto 1rem; }
+      .team-grid { flex-direction: column; gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechZ</h1>
+    <p>Your Partner for IT Consulting &amp; Resource Solutions</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>About TechZ</h2>
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&q=80" alt="TechZ Office" class="about-img">
+      <p>
+        <strong>TechZ</strong> is a leading IT consulting company, empowering businesses with innovative technology solutions and expert consulting services. 
+        We specialize in providing top-tier IT professionals and tailored resources to meet the unique needs of our clients.
+      </p>
+      <p>
+        Our mission is to drive digital transformation and help our partners achieve success through strategic collaboration and excellence in IT delivery.
+      </p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul class="services">
+        <li>IT Consulting &amp; Strategy</li>
+        <li>On-Demand IT Resource Provisioning</li>
+        <li>Project Management &amp; Delivery</li>
+        <li>Cloud Solutions &amp; Migration</li>
+        <li>Software Development &amp; Integration</li>
+        <li>Cybersecurity Consulting</li>
+        <li>Partner Collaboration Opportunities</li>
+      </ul>
+    </section>
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+          <h3>John Doe</h3>
+          <p>CEO &amp; Lead Consultant</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+          <h3>Jane Smith</h3>
+          <p>Cloud Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Mike Johnson">
+          <h3>Mike Johnson</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:info@thetechz.com">info@thetechz.com</a></p>
+        <p><strong>Phone:</strong> +1-555-123-4567</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/thetechz" target="_blank" rel="noopener">linkedin.com/company/thetechz</a></p>
+        <p><strong>Partnering:</strong> Interested in collaborating? <a href="mailto:partners@thetechz.com">Contact our partnership team</a>.</p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 TechZ. All rights reserved.
+  </footer>
+</body>
+</html>
